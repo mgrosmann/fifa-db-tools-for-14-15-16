@@ -18,7 +18,7 @@ from datetime import datetime
 
 # --- Configuration ---
 #CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/new_player.csv"
-CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/exist_player.csv"                  # pour mettre a jour
+CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/exist_player.csv"
 OUTPUT_PLAYERS = "/mnt/c/github/fifa/cmtracker/import/csv/players.csv"
 OUTPUT_PLAYERNAMES = "/mnt/c/github/fifa/cmtracker/import/csv/playernames.csv"
 OUTPUT_PLAYERLOANS = "/mnt/c/github/fifa/cmtracker/import/csv/playerloans.csv"

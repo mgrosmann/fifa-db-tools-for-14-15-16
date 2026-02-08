@@ -3,7 +3,7 @@ import pandas as pd
 # --- CONFIG ---
 #INPUT = "/mnt/c/github/fifa/cmtracker/import/csv/joueurs_existants.csv"
 #INPUT = "/mnt/c/github/fifa/cmtracker/import/csv/nouveaux_joueurs.csv"
-INPUT = "/mnt/c/github/fifa/cmtracker/import/csv/new_player.csv"
+INPUT = "/mnt/c/github/fifa/cmtracker/import/debug/new_player.csv"
 #INPUT = "/mnt/c/github/fifa/cmtracker/import/csv/exist_player.csv"
 LOG = "/mnt/c/github/fifa/cmtracker/import/debug/doublons_playerid.log"
 

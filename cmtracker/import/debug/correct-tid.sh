@@ -1,12 +1,11 @@
 #!/bin/bash
 
 # Fichiers d'entrée
-EXISTANTS="/mnt/c/github/fifa/cmtracker/import/joueurs_existants.csv"
-NOUVEAUX="/mnt/c/github/fifa/cmtracker/import/nouveaux_joueurs.csv"
-
+EXISTANTS="/mnt/c/github/fifa/cmtracker/import/csv/joueurs_existants.csv"
+NOUVEAUX="/mnt/c/github/fifa/cmtracker/import/csv/joueurs_nouveaux.csv"
 # Fichiers de sortie
-EXISTANTS_OUT="/mnt/c/github/fifa/cmtracker/import/joueurs_existants_fixed.csv"
-NOUVEAUX_OUT="/mnt/c/github/fifa/cmtracker/import/nouveaux_joueurs_fixed.csv"
+EXISTANTS_OUT="/mnt/c/github/fifa/cmtracker/import/csv/joueurs_existants_fixed.csv"
+NOUVEAUX_OUT="/mnt/c/github/fifa/cmtracker/import/csv/joueurs_nouveaux_fixed.csv"
 
 # Copier les fichiers avant modification
 cp "$EXISTANTS" "$EXISTANTS_OUT"

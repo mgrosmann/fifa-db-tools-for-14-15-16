@@ -1,10 +1,10 @@
 import pandas as pd
 
 # --- FICHIERS ---
-csv_nouveaux = "/mnt/c/github/fifa/cmtracker/import/nouveaux_joueurs.csv"
-csv_existants = "/mnt/c/github/fifa/cmtracker/import/joueurs_existants.csv"
+csv_nouveaux = "/mnt/c/github/fifa/cmtracker/import/debug/joueurs_nouveaux_fixed.csv"
+csv_existants = "/mnt/c/github/fifa/cmtracker/import/debug/joueurs_existants_fixed.csv"
 csv_teams = "/mnt/c/github/fifa/cmtracker/import/debug/teams.csv"
-log_missing_teams = "/mnt/c/github/fifa/cmtracker/import/teamid_manquants.log"
+log_missing_teams = "/mnt/c/github/fifa/cmtracker/import/debug/teamid_manquants.log"
 
 # --- Charger les CSV ---
 df_new = pd.read_csv(csv_nouveaux)

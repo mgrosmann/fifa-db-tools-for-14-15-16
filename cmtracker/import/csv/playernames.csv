@@ -3,8 +3,10 @@ playerid;firstname;lastname
 260162;Mario;Stroeykens
 266127;Lewis;Hall
 266815;Ben;Gannon-Doak
+268421;Mathys;Tel
+272781;Eliesse;Ben Seghir
 278661;Yarek;Gąsiorowski
-256420;Malick;Fofana
+263765;Tom;Bischof
 263828;Roger;Fernandes
 265526;Guillaume;Restes
 275050;Kyriani;Sabbe
@@ -15,12 +17,11 @@ playerid;firstname;lastname
 271574;Rico;Lewis
 271575;Simone;Pafundi
 274516;Ibrahim;Osman
-274559;Kendry;Páez
+270579;Wilson;Odobert
 277755;Josimar;Alcócer
 269186;Orri;Óskarsson
 269292;Gianluca;Prestianni
 271362;Yasin;Özcan
-271975;Stefan;Bajcetic Maquieira
 272602;Valentín;Carboni
 274952;Oscar;Højlund
 276682;Cher;Ndour
@@ -29,38 +30,35 @@ playerid;firstname;lastname
 269495;Facundo;Buonanotte
 271917;Jorne;Spileers
 273621;James;Beadle
-259608;Evan;Ferguson
 269084;Umut;Tohumcu
 270465;Badredine;Bouanani
 273616;Romain;Esse
 263193;El Chadaille;Bitshiabu
-264240;Pablo Martín;Páez Gavira
-264309;Arda;Güler
-269087;Leny;Yoro
+270208;Archie;Gray
 271800;Yankuba;Minteh
 272834;João Pedro;Gonçalves Neves
 272978;Jorrel;Hato
 274246;Lewis;Miley
 275048;Chemsdine;Talbi
-276528;Claudio;Echeverri
 278046;Pau;Cubarsí Paredes
-262105;Julien;Duranville
 262863;Antonio;Nusa
 269859;Arthur;Vermeeren
+270673;Warren;Zaïre-Emery
+271421;Désiré;Doué
 272505;Endrick Felipe;Moreira de Sousa
+272926;Lucas;Bergvall
 275324;Assane;Diao
 277482;Leo;Sauer
 277846;Nicolás;Paz Martínez
-277954;Kenan;Yıldız
 242879;Maarten;Vandevoordt
 252552;Konstantinos;Tzolakis
 260599;Alan;Varela
 262138;Castello;Lukeba
 264238;Diego;López Noguerol
 264388;Alberto;Moleiro González
+264846;Cristhian;Mosquera Ibargüen
 266096;Tomás;Lemos Araújo
 266436;Javier;Guerra Moreno
-268889;Álvaro;Fernández Carreras
 268896;Hugo;Larsson
 270077;Konstantinos;Koulierakis
 270531;Ousmane;Diomande
@@ -69,20 +67,22 @@ playerid;firstname;lastname
 250753;Anatoliy;Trubin
 254262;Zeno;Debast
 256948;Christos;Tzolis
+257186;Ardon;Jashari
 259377;Yeremy Jesús;Pino Santos
 259565;Yoan;Bonny
 259913;Georgiy;Sudakov
+260592;Benjamin;Šeško
 261050;Francisco;F. da Conceição
 264862;Maghnes;Akliouche
-265188;Giorgio;Scalvini
 265450;Johan;Bakayoko
 265576;Leopold;Querfeld
 265695;Matías;Soulé
 268611;Joel;Ordoñez
 270050;Mika;Biereth
 270086;António João;Tavares Silva
+271032;Matte;Smets
+273018;Andrey;N. dos Santos
 274288;Oscar;Gloukh
-277031;Abdukodir;Khusanov
 277581;Samuel;Omorodion Aghehowa
 277797;Marcos Leonardo;Santos Almeida
 247172;Jhon;Durán
@@ -101,23 +101,24 @@ playerid;firstname;lastname
 255558;Emin;Bayram
 256261;Malick;Thiaw
 258432;Chrislain;Matsima
+258781;Illia;Zabarnyi
+259356;Carney;Chukwuemeka
 259480;Ismael;Saibari
-259584;Matteo;Ruggeri
 259633;Giannis;Konstantelias
 262088;Hákon Arnar;Haraldsson
+262859;Levi;Colwill
+263063;James;Trafford
 263268;Yoann;Cathline
 263887;Jonas;Urbig
-265774;Koni;De Winter
-268438;Alejandro;Garnacho
 277295;Oscar;Bobb
 248465;Ian;Maatsen
-252042;João Pedro;Junqueira de Jesus
 252144;Eduardo Filipe;Quaresma
+254796;Noni;Madueke
 257075;Paul;Nebel
 257400;Yasin;Ayari
 257504;Bilal;El Khannouss
+257711;Riccardo;Calafiori
 258139;Raúl;Moro Prescoli
-265459;Tyler;Morton
 265578;Ilias;Akhomach
 271755;Enrique Jesús;Salas Valiente
 277244;Rafael;Marín Zamora
@@ -133,7 +134,6 @@ playerid;firstname;lastname
 270633;Ryan;Flamingo
 271121;Quilindschy;Hartman
 271132;Gabriel;Silva Vieira
-271916;Bryan;Zaragoza Martínez
 272874;Arne;Engels
 273651;Jarell;Quansah
 273883;Cesare;Casadei
@@ -147,7 +147,6 @@ playerid;firstname;lastname
 257057;Amadou;Onana
 257368;Lorenzo;Pirola
 257470;Anthony;Elanga
-258485;Filip;Jörgensen
 258906;Wilfried;Gnonto
 259233;Ilaix;Moriba
 260779;Simon;Adingra
@@ -171,7 +170,6 @@ playerid;firstname;lastname
 260145;Omari;Hutchinson
 260651;Bénie;Traoré
 260952;Andreas;Schjelderup
-262151;Ezequiel;Fernández
 262221;Luciano;Valente
 262659;Noah;Atubolu
 262842;Martin;Baturina
@@ -203,9 +201,9 @@ playerid;firstname;lastname
 261654;Omar;El Hilali
 263439;Paulo Guilherme;Gonçalves Bernardo
 263836;Jesús;Orozco Chiquete
-264219;Ernest;Poku
 264288;Alexandre;Penetra Correia
 251954;Crysencio;Summerville
+253004;Anssumane;Fati
 253054;Hayden;Hackney
 253130;Robert;Navarro Muñoz
 256725;Fábio Leandro;Carvalho
@@ -221,11 +219,10 @@ playerid;firstname;lastname
 261616;Quentin;Merlin
 262042;Maxime;Estève
 262510;Beñat;Turrientes Imaz
-262745;Neil;El Aynaoui
 264330;Christos;Zafeiris
 264422;Matthis;Abline
 247463;Folarin;Balogun
-234205;Hiroki;Ito
+230918;Trevoh;Chalobah
 226754;Ismaël;Bennacer
 228174;Cameron;Carter-Vickers
 235661;Doğucan;Haspolat
@@ -233,28 +230,29 @@ playerid;firstname;lastname
 237034;Juan Camilo;Hernández Suárez
 239810;Nicolas;Raskin
 234569;Florentino;Morris Luís
+236804;Facundo;Medina
 238756;Jørgen Strand;Larsen
-240734;Matt;ORiley
+240734;Matt;O'Riley
 240913;Caoimhin;Kelleher
 241187;Lutsharel;Geertruida
 241707;Pape;Gueye
-242434;Curtis;Jones
 243057;Neco;Williams
 243657;James;Garner
 243702;Djed;Spence
 244973;Marcel;Ruiz
-245037;Eric;García Martret
-245152;Santiago;Giménez
 246565;Bafodé;Diakité
 246871;Enzo;Barrenechea
 248484;Nathan;Collins
+248695;Wesley;Fofana
 248793;Mats;Wieffer
 251377;Rodrigo;Zalazar
 251421;Brennan;Johnson
 251479;Maxim;De Cuyper
 252064;Ladislav;Krejčí
+253306;Manuel;Ugarte
 254566;Patrick;Wimmer
 255223;Amine;Adli
+255654;Pierre;Kalulu
 255854;Jon;Pacheco Dozagarat
 256612;F. Evanilson;de Lima Barbosa
 257191;Anton;Stach
@@ -275,7 +273,7 @@ playerid;firstname;lastname
 235633;Yehvann;Diouf
 238186;Marcin;Bułka
 239892;Yunus;Akgün
-240225;Matvey;Safonov
+240277;Matteo;Gabbia
 241508;Mikkel;Damsgaard
 241509;Mauro Jaqueson;J. Ferreira Santos
 241811;Sergio;Gómez Martín
@@ -284,8 +282,8 @@ playerid;firstname;lastname
 242444;João;Félix Sequeira
 242816;Ricard;Puig Martí
 243627;Yacine;Adli
-243780;Kang In;Lee
 243923;Logan;Costa
+245155;Mohammed;Kudus
 247679;Victor;Boniface
 250955;Josip;Stanišić
 251804;Sergiño;Dest
@@ -296,9 +294,12 @@ playerid;firstname;lastname
 254551;Georges;Mikautadze
 255566;Samuel;Almeida Costa
 256325;Josip;Šutalo
+256903;Gonçalo Matias;Ramos
 257980;Dan;Ndoye
 258466;Leo;Román Riquelme
 258885;Luiz Lúcio;Reis Júnior
+258966;Andrea;Cambiaso
+259197;Nicolas;Jackson
 261264;David;Affengruber
 262402;Sergi;Cardona Bermúdez
 262880;Raphael;Onyedika
@@ -310,7 +311,6 @@ playerid;firstname;lastname
 266872;Federico;Gatti
 268804;Mario;Gila Fuentes
 269493;Alexsandro;de Souza Ribeiro
-271400;Igor Guilherme;Barbosa da Paixão
 273463;João Victor;Gomes da Silva
 274536;Moïse;Bombito
 277537;Bernardo;de Souza
@@ -329,10 +329,8 @@ playerid;firstname;lastname
 243715;William;Saliba
 248148;Martín;Zubimendi Ibáñez
 251805;Jurriën;Timber
-254796;Noni;Madueke
+256197;Piero;Hincapié
 256958;Fábio Daniel;Ferreira Vieira
-257711;Riccardo;Calafiori
-264846;Cristhian;Mosquera Ibargüen
 265693;Jakub;Kiwior
 222665;Martin;Ødegaard
 231448;Reiss;Nelson
@@ -342,9 +340,11 @@ playerid;firstname;lastname
 251566;Gabriel Teodoro;Martinelli Silva
 225793;Ben;Godfrey
 251470;Charles;De Ketelaere
+252154;Marco;Carnesecchi
 255611;Daniel;Maldini
 257785;Marco;Brescianini
 262113;Nicola;Zalewski
+265188;Giorgio;Scalvini
 266304;Giorgio;Cittadini
 271577;Ibrahim;Sulemana
 277839;Nikola;Krstović
@@ -371,7 +371,6 @@ playerid;firstname;lastname
 213565;Thomas;Lemar
 230899;Ademola;Lookman
 233486;Robin;Le Normand
-240690;Nico;Gonzalez
 245371;Thiago;Almada
 246191;Julián;Alvarez
 253396;Giuliano;Simeone
@@ -388,6 +387,7 @@ playerid;firstname;lastname
 251136;Horațiu;Moldovan
 256058;Pablo;Pérez Rico
 259516;João Lucas;de Souza Cardoso
+259584;Matteo;Ruggeri
 266039;Marc;Pubill Pagès
 272449;Pablo;Barrios Rivas
 192448;Marc-André;ter Stegen
@@ -396,6 +396,7 @@ playerid;firstname;lastname
 241461;Ferran;Torres García
 241486;Jules;Koundé
 244260;Daniel;Olmo Carvajal
+245037;Eric;García Martret
 246139;Ignacio;Peña Sotorres
 251854;Pedro;González López
 259532;Joan;García Pons
@@ -406,12 +407,11 @@ playerid;firstname;lastname
 210514;João Pedro;Cavaco Cancelo
 213661;Andreas;Christensen
 228702;Frenkie;de Jong
-253004;Anssumane;Fati
 253163;Ronald;Araujo
 263578;Alejandro;Balde Martínez
+264240;Pablo Martín;Páez Gavira
 265600;Roony;Bardghji
 225375;Konrad;Laimer
-229391;João Maria;Palhinha Gonçalves
 167495;Manuel;Neuer
 186569;Sven;Ulreich
 202126;Harry;Kane
@@ -422,13 +422,13 @@ playerid;firstname;lastname
 213331;Jonathan;Tah
 223885;Alexander;Nübel
 229558;Dayot;Upamecano
+234205;Hiroki;Ito
 234396;Alphonso;Davies
 237086;Min Jae;Kim
 241084;Luis;Díaz
 247827;Michael;Olise
 248266;Sacha;Boey
 256790;Jamal;Musiala
-263765;Tom;Bischof
 266236;Arijon;Ibrahimović
 277823;Daniel;Peretz
 222104;Tosin;Adarabioyo
@@ -437,22 +437,22 @@ playerid;firstname;lastname
 239231;Marc;Cucurella Saseta
 242578;Benoît;Badiashile
 247090;Enzo;Fernández
+252042;João Pedro;Junqueira de Jesus
 256079;Moisés;Caicedo
 257534;Cole;Palmer
+258485;Filip;Jörgensen
 259031;Liam;Delap
-259197;Nicolas;Jackson
 259307;Malo;Gusto
 260942;David Datro;Fofana
-230918;Trevoh;Chalobah
+274559;Kendry;Páez
 238074;Reece;James
 238616;Pedro;Lomba Neto
 248158;Gabriel;Slonina
-248695;Wesley;Fofana
 261530;Dário;Cassia Luís Essugo
-262859;Levi;Colwill
 263620;Romeo;Lavia
 266032;Jamie;Gittens
 266605;Caleb;Wiley
+268438;Alejandro;Garnacho
 215441;Serhou;Guirassy
 229891;Julian;Ryerson
 247819;Nico;Schlotterbeck
@@ -471,7 +471,7 @@ playerid;firstname;lastname
 251852;Karim;Adeyemi
 254117;Maximilian;Beier
 259075;Yan;Bueno Couto
-259356;Carney;Chukwuemeka
+262105;Julien;Duranville
 270964;Jobe;Bellingham
 177683;Yann;Sommer
 184392;Matteo;Darmian
@@ -502,6 +502,7 @@ playerid;firstname;lastname
 231512;Lloyd;Kelly
 236499;Douglas Luiz;Soares de Paulo
 239580;Gleison Bremer;Silva Nascimento
+240690;Nico;Gonzalez
 246656;Emil;Holm
 257290;João Mário;Neto Lopes
 268802;Fabio;Miretti
@@ -513,18 +514,16 @@ playerid;firstname;lastname
 238744;Weston;McKennie
 239763;Edon;Zhegrova
 240679;Teun;Koopmeiners
-241496;Timothy;Weah
 243580;Loïs;Openda
 243630;Jonathan;David
 246430;Dušan;Vlahović
 247246;Khéphren;Thuram
 251870;Juan David;Cabal
-255654;Pierre;Kalulu
-258966;Andrea;Cambiaso
 276804;Mattia;Compagnon
+277954;Kenan;Yıldız
 223550;Jonas;Omlin
 236786;Martin;Terrier
-256197;Piero;Hincapié
+264219;Ernest;Poku
 268622;Jeanuël;Belocian
 270033;Tim;Oermann
 204092;Janis;Blaswich
@@ -542,9 +541,10 @@ playerid;firstname;lastname
 255106;Loïc;Badé
 256853;Malik;Tillman
 261360;Noah;Mbamba
-272781;Eliesse;Ben Seghir
+262151;Ezequiel;Fernández
 275028;Arthur Augusto;de Matos Soares
 212831;Alisson;Ramses Becker
+242434;Curtis;Jones
 257289;Hugo;Ekitiké
 203376;Virgil;van Dijk
 209331;Mohamed;Salah
@@ -566,6 +566,7 @@ playerid;firstname;lastname
 256630;Florian;Wirtz
 260908;Milos;Kerkez
 262621;Giorgi;Mamardashvili
+271975;Stefan;Bajcetic Maquieira
 278104;Isaac;Mabaya
 205988;Luke;Shaw
 233064;Mason;Mount
@@ -585,13 +586,13 @@ playerid;firstname;lastname
 243014;Bryan;Mbeumo
 243647;Altay;Bayındır
 250961;Joshua;Zirkzee
-253306;Manuel;Ugarte
-260592;Benjamin;Šeško
+269087;Leny;Yoro
 269136;Kobbie;Mainoo
 224081;Kalvin;Phillips
 241159;Marc;Guéhi
 251570;Rayan;Cherki
 253052;Issa;Kaboré
+276528;Claudio;Echeverri
 203574;John;Stones
 204246;Marcus;Bettinelli
 206517;Jack;Grealish
@@ -611,11 +612,11 @@ playerid;firstname;lastname
 253124;Matheus;Luiz Nunes
 255069;Nicolás;González Iglesias
 256675;Omar;Marmoush
-263063;James;Trafford
 270409;Sávio;Moreira de Oliveira
+277031;Abdukodir;Khusanov
 210008;Adrien;Rabiot
 215698;Mike;Maignan
-240277;Matteo;Gabbia
+242664;Alexis;Saelemaekers
 253473;Samuele;Ricci
 254840;Strahinja;Pavlović
 257353;Warren;Bondo
@@ -629,10 +630,13 @@ playerid;firstname;lastname
 232756;Fikayo;Tomori
 237942;Pervis;Estupiñán
 241721;Rafael;da Conceição Leão
+245152;Santiago;Giménez
 245630;Youssouf;Fofana
+246172;Samuel;Chukwueze
+252060;Tommaso;Pobega
 253177;Yunus;Musah
 256899;Lorenzo;Colombo
-257186;Ardon;Jashari
+265774;Koni;De Winter
 271579;Filippo;Terracciano
 278928;Alejandro;Jiménez Sánchez
 200752;Juan Guilherme;Nunes Jesus
@@ -651,6 +655,8 @@ playerid;firstname;lastname
 236632;David;Neres Campos
 237238;Scott;McTominay
 237669;Alessio;Zerbin
+239380;Noa;Lang
+239679;Pasquale;Mazzocchi
 240716;Mathías;Olivera
 241390;Eljif;Elmas
 243241;Alessandro;Buongiorno
@@ -698,11 +704,13 @@ playerid;firstname;lastname
 234371;Rémy;Descamps
 246947;Paul;Akouokou
 247050;Pavel;Šulc
+256420;Malick;Fofana
 256970;Adam;Karabec
 262102;Ruben;Kluivert
 263139;Dominik;Greif
 263815;Abner Vinícius;da Silva Santos
 264325;Martín;Satriano
+265459;Tyler;Morton
 201455;Geoffrey;Kondogbia
 211784;Neal;Maupay
 215316;Gerónimo;Rulli
@@ -717,17 +725,19 @@ playerid;firstname;lastname
 213648;Pierre-Emile;Højbjerg
 226851;Benjamin;Pavard
 232097;Amine;Harit
-236804;Facundo;Medina
 237841;Amir;Murillo
 239559;Jeffrey;de Lange
+241496;Timothy;Weah
 243009;Derek;Cornelius
 244749;Nayef;Aguerd
 246147;Mason;Greenwood
 251806;Quinten;Timber
 256669;Faris Pemi;Moumbagna
 264401;Bamo;Meïté
+271400;Igor Guilherme;Barbosa da Paixão
 278095;Jelle;Van Neck
 237679;Randal;Kolo Muani
+240225;Matvey;Safonov
 251752;Lucas;Chevalier
 252145;Nuno Alexandre;Tavares Mendes
 207865;Marcos;Aoás Corrêa
@@ -735,14 +745,11 @@ playerid;firstname;lastname
 226271;Fabián;Ruiz Peña
 231443;Ousmane;Dembélé
 235212;Achraf;Hakimi
+243780;Kang In;Lee
 247635;Khvicha;Kvaratskhelia
 255253;Vítor;Machado Ferreira
 256196;Willian;Pacho
-256903;Gonçalo Matias;Ramos
-258781;Illia;Zabarnyi
 264652;Bradley;Barcola
-270673;Warren;Zaïre-Emery
-271421;Désiré;Doué
 279709;Lucas;Lopes Beraldo
 197445;David;Alaba
 228618;Ferland;Mendy
@@ -751,7 +758,9 @@ playerid;firstname;lastname
 243812;Rodrygo;Silva de Goes
 243952;Andriy;Lunin
 246606;Francisco José;García Torres
+248243;Eduardo;Camavinga
 252371;Jude;Bellingham
+268889;Álvaro;Fernández Carreras
 278349;Dean;Huijsen
 192119;Thibaut;Courtois
 204963;Daniel;Carvajal Ramos
@@ -762,6 +771,7 @@ playerid;firstname;lastname
 239053;Federico;Valverde
 240130;Éder;Gabriel Militão
 241637;Aurélien;Tchouaméni
+264309;Arda;Güler
 190813;Stephan;El Shaarawy
 208268;Bryan;Cristante
 211110;Paulo;Dybala
@@ -776,22 +786,23 @@ playerid;firstname;lastname
 245426;Marash;Kumbulla
 250723;Kouadio Manu;Koné
 258826;Devyne;Rensch
+259608;Evan;Ferguson
 268728;Anass;Salah-Eddine
+271916;Bryan;Zaragoza Martínez
 211515;Pierluigi;Gollini
 220651;José Ángel;Esmoris Tasende
 230872;Mile;Svilar
 233189;Devis;Vásquez
 239964;Eldor;Shomurodov
 246688;Saud;Abdulhamid
+262745;Neil;El Aynaoui
 269312;Tommaso;Baldanzi
+229391;João Maria;Palhinha Gonçalves
 232488;Cristian;Romero
 236480;Yves;Bissouma
 237985;Kevin;Danso
 240091;Guglielmo;Vicario
 261025;Dane;Scarlett
-268421;Mathys;Tel
-270208;Archie;Gray
-270579;Wilson;Odobert
 205923;Ben;Davies
 220697;James;Maddison
 225539;Dominic;Solanke
@@ -799,7 +810,6 @@ playerid;firstname;lastname
 231943;Richarlison;de Andrade
 236568;Brandon;Austin
 238216;Conor;Gallagher
-245155;Mohammed;Kudus
 245367;Xavi;Simons
 246791;Manor;Solomon
 247394;Dejan;Kulusevski
@@ -809,4 +819,3 @@ playerid;firstname;lastname
 264453;Micky;van de Ven
 264731;Ashley;Phillips
 269176;Alejo;Veliz
-272926;Lucas;Bergvall
