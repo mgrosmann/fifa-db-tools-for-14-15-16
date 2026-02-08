@@ -2,7 +2,7 @@
 # ltl16_players_mysql.sh
 # Export TXT réorganisé selon FIFA 16 pour la table players depuis MySQL
 
-DB="FIFA14"
+DB="$1"
 cmd="mysql -uroot -proot -P 5000 -h127.0.0.1 -D $DB"
 TABLE="players"
 OUTFILE="players_fifa16_format.txt"

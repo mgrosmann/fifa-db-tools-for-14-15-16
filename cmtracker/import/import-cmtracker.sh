@@ -1,19 +1,19 @@
 #!/bin/bash
-
+start_time=$(date +%s)
 MYSQL_CMD="mysql -uroot -proot -h127.0.0.1 -P5000 -DFIFA15 -N -s"
 
-CSV_CMTRACKER="/mnt/c/github/fifa/cmtracker/players.csv"
-CSV_DEFAULT="/mnt/c/github/fifa/cmtracker/test.csv"
-CSV_TPL="/mnt/c/github/fifa/cmtracker/teamplayerlinks.csv"
-CSV_NAMES="/mnt/c/github/fifa/cmtracker/playernames.csv"
+CSV_CMTRACKER="/mnt/c/github/fifa/cmtracker//import/csv/players.csv"
+CSV_DEFAULT="/mnt/c/github/fifa/cmtracker/import/csv/test.csv"
+CSV_TPL="/mnt/c/github/fifa/cmtracker/import/csv/teamplayerlinks.csv"
+CSV_NAMES="/mnt/c/github/fifa/cmtracker/import/csv/playernames.csv"
 
 # ---------------------------------------------------------
-# 1) RÉINITIALISATION DU JOUEUR PAR DÉFAUT (50075)
+# 1) RÉINITIALISATION DU JOUEUR PAR DÉFAUT (999)
 # ---------------------------------------------------------
-default_exists=$($MYSQL_CMD --skip-column-names -e "SELECT 1 FROM players WHERE playerid=50075;")
+default_exists=$($MYSQL_CMD --skip-column-names -e "SELECT 1 FROM players WHERE playerid=999;")
 if [[ "$default_exists" == "1" ]]; then
-    echo "→ Suppression du joueur par défaut 50075"
-    $MYSQL_CMD -e "DELETE FROM players WHERE playerid=50075;"
+    echo "→ Suppression du joueur par défaut 999"
+    $MYSQL_CMD -e "DELETE FROM players WHERE playerid=999;"
 fi
 # 2) UPDATE / INSERT DES JOUEURS CMTRACKER
 # ---------------------------------------------------------
@@ -80,10 +80,10 @@ SET
 WHERE playerid=$playerid;
         "
     else
-        echo "→ Nouveau joueur : création depuis le template 50075"
+        echo "→ Nouveau joueur : création depuis le template 999"
 
-        # 1) Supprimer 50075 si elle traîne
-        $MYSQL_CMD -e "DELETE FROM players WHERE playerid=50075;"
+        # 1) Supprimer 999 si elle traîne
+        $MYSQL_CMD -e "DELETE FROM players WHERE playerid=999;"
 
         # 2) Charger le template
         $MYSQL_CMD -e "
@@ -147,14 +147,14 @@ SET
     gkkicking=$gkkicking,
     gkreflexes=$gkreflexes,
     gkpositioning=$gkpositioning
-WHERE playerid=50075;
+WHERE playerid=999;
 "
 
         # 4) Changer l'ID pour le nouveau joueur
         $MYSQL_CMD -e "
 UPDATE players
 SET playerid=$playerid
-WHERE playerid=50075;
+WHERE playerid=999;
 "
 # 5) Mise à jour des nameids (maintenant que le joueur existe)
 firstid=$($MYSQL_CMD --skip-column-names \
@@ -216,6 +216,10 @@ VALUES ($tpl_teamid, $tpl_playerid, $KEY,0,0,0,0,0,0,0,3,0,0,29,$number);
 done
 
 echo "--- FIN TEAMPLAYERLINKS ---"
+end_time=$(date +%s)
+elapsed=$((end_time - start_time))
+
+echo "Temps d'exécution : ${elapsed}s"
 
 # ---------------------------------------------------------
 

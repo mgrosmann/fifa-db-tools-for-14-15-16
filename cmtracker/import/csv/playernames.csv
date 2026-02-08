@@ -1,0 +1,812 @@
+playerid;firstname;lastname
+258378;Mika;Godts
+260162;Mario;Stroeykens
+266127;Lewis;Hall
+266815;Ben;Gannon-Doak
+278661;Yarek;Gąsiorowski
+256420;Malick;Fofana
+263828;Roger;Fernandes
+265526;Guillaume;Restes
+275050;Kyriani;Sabbe
+263370;Valentín;Barco
+268259;Nelson;Weiper
+272785;Christian;Mawissa
+267861;Santiago;Castro
+271574;Rico;Lewis
+271575;Simone;Pafundi
+274516;Ibrahim;Osman
+274559;Kendry;Páez
+277755;Josimar;Alcócer
+269186;Orri;Óskarsson
+269292;Gianluca;Prestianni
+271362;Yasin;Özcan
+271975;Stefan;Bajcetic Maquieira
+272602;Valentín;Carboni
+274952;Oscar;Højlund
+276682;Cher;Ndour
+277869;Michael;Kayode
+266253;Iván;Fresneda Corraliza
+269495;Facundo;Buonanotte
+271917;Jorne;Spileers
+273621;James;Beadle
+259608;Evan;Ferguson
+269084;Umut;Tohumcu
+270465;Badredine;Bouanani
+273616;Romain;Esse
+263193;El Chadaille;Bitshiabu
+264240;Pablo Martín;Páez Gavira
+264309;Arda;Güler
+269087;Leny;Yoro
+271800;Yankuba;Minteh
+272834;João Pedro;Gonçalves Neves
+272978;Jorrel;Hato
+274246;Lewis;Miley
+275048;Chemsdine;Talbi
+276528;Claudio;Echeverri
+278046;Pau;Cubarsí Paredes
+262105;Julien;Duranville
+262863;Antonio;Nusa
+269859;Arthur;Vermeeren
+272505;Endrick Felipe;Moreira de Sousa
+275324;Assane;Diao
+277482;Leo;Sauer
+277846;Nicolás;Paz Martínez
+277954;Kenan;Yıldız
+242879;Maarten;Vandevoordt
+252552;Konstantinos;Tzolakis
+260599;Alan;Varela
+262138;Castello;Lukeba
+264238;Diego;López Noguerol
+264388;Alberto;Moleiro González
+266096;Tomás;Lemos Araújo
+266436;Javier;Guerra Moreno
+268889;Álvaro;Fernández Carreras
+268896;Hugo;Larsson
+270077;Konstantinos;Koulierakis
+270531;Ousmane;Diomande
+272500;Carlos;Baleba
+275298;Aleksandar;Pavlović
+250753;Anatoliy;Trubin
+254262;Zeno;Debast
+256948;Christos;Tzolis
+259377;Yeremy Jesús;Pino Santos
+259565;Yoan;Bonny
+259913;Georgiy;Sudakov
+261050;Francisco;F. da Conceição
+264862;Maghnes;Akliouche
+265188;Giorgio;Scalvini
+265450;Johan;Bakayoko
+265576;Leopold;Querfeld
+265695;Matías;Soulé
+268611;Joel;Ordoñez
+270050;Mika;Biereth
+270086;António João;Tavares Silva
+274288;Oscar;Gloukh
+277031;Abdukodir;Khusanov
+277581;Samuel;Omorodion Aghehowa
+277797;Marcos Leonardo;Santos Almeida
+247172;Jhon;Durán
+252037;Fábio Daniel;Soares Silva
+254088;Amad;Diallo
+258498;Bart;Verbruggen
+258729;Gabriel;Veiga Novas
+259848;Jon Mikel;Aramburu
+259868;Pape Matar;Sarr
+264172;José Ángel;Carmona Navarro
+264298;Conor;Bradley
+264432;Abdessamad;Ezzalzouli
+267976;Pablo;Torre Carral
+272612;Brajan;Gruda
+247649;Jarrad;Branthwaite
+255558;Emin;Bayram
+256261;Malick;Thiaw
+258432;Chrislain;Matsima
+259480;Ismael;Saibari
+259584;Matteo;Ruggeri
+259633;Giannis;Konstantelias
+262088;Hákon Arnar;Haraldsson
+263268;Yoann;Cathline
+263887;Jonas;Urbig
+265774;Koni;De Winter
+268438;Alejandro;Garnacho
+277295;Oscar;Bobb
+248465;Ian;Maatsen
+252042;João Pedro;Junqueira de Jesus
+252144;Eduardo Filipe;Quaresma
+257075;Paul;Nebel
+257400;Yasin;Ayari
+257504;Bilal;El Khannouss
+258139;Raúl;Moro Prescoli
+265459;Tyler;Morton
+265578;Ilias;Akhomach
+271755;Enrique Jesús;Salas Valiente
+277244;Rafael;Marín Zamora
+250789;Dilane;Bakwa
+251223;Ricardo;Pepi
+252259;Enzo;Millot
+255001;Nicolò;Rovella
+255303;Elia;Caprile
+255434;Julio César;Enciso
+267680;Abdul;Fatawu
+267991;Máximo;Perrone
+270559;Tiago;Carvalho Santos
+270633;Ryan;Flamingo
+271121;Quilindschy;Hartman
+271132;Gabriel;Silva Vieira
+271916;Bryan;Zaragoza Martínez
+272874;Arne;Engels
+273651;Jarell;Quansah
+273883;Cesare;Casadei
+274445;Karim;Konaté
+277439;Volodymyr;Brazhko
+278012;Darío;Osorio
+242453;Sepp;van den Berg
+246683;Lucien;Agoumé
+255009;Kenneth;Taylor
+256476;Mohamed-Ali;Cho
+257057;Amadou;Onana
+257368;Lorenzo;Pirola
+257470;Anthony;Elanga
+258485;Filip;Jörgensen
+258906;Wilfried;Gnonto
+259233;Ilaix;Moriba
+260779;Simon;Adingra
+260815;Arnau;Martínez López
+260926;Kevin;Schade
+261299;Alex;Scott
+264293;Habib;Diarra
+264701;Arsen;Zakharyan
+244728;Sem;Steijn
+245637;Georginio;Rutter
+246618;Adam;Hložek
+246672;Ander;Barrenetxea
+251810;Brian;Brobbey
+255928;Mohammed;Diomande
+255971;Santiago;Hezze
+256632;Luis Henrique;Tomaz de Lima
+256782;Sebastian;Nanasi
+257919;Rocco;Reitz
+258937;Aimar;Oroz Huarte
+259399;Rasmus;Højlund
+260145;Omari;Hutchinson
+260651;Bénie;Traoré
+260952;Andreas;Schjelderup
+262151;Ezequiel;Fernández
+262221;Luciano;Valente
+262659;Noah;Atubolu
+262842;Martin;Baturina
+263575;Clemens;Riedel
+269278;Diego;Gómez
+270206;Mateo;Joseph
+271019;Giovanni;Fabbian
+271464;Yáser;Asprilla
+272777;Bashir;Humphreys
+275208;Guéla;Doué
+277426;Carlos Roberto;Forbs Borges
+277708;Unai;Gómez Etxebarria
+266500;Jonathan;Rowe
+268763;Ernest;Nuamah
+269271;Filip;Stanković
+270301;Gerard;Fdez. Castellano
+270995;Nikolas;Sattlberger
+270997;Samson;Baidoo
+271573;Mattia;Zanotti
+276695;Shea;Charles
+277252;Samuel;Dahl
+253444;Arnaud;Kalimuendo
+255272;Kevin;Paredes
+256402;Carlos;Alcaraz
+256769;Adrien;Truffert
+257084;Lesley;Ugochukwu
+257167;Mathias;Kvistgaarden
+258775;Luka;Sučić
+261654;Omar;El Hilali
+263439;Paulo Guilherme;Gonçalves Bernardo
+263836;Jesús;Orozco Chiquete
+264219;Ernest;Poku
+264288;Alexandre;Penetra Correia
+251954;Crysencio;Summerville
+253054;Hayden;Hackney
+253130;Robert;Navarro Muñoz
+256725;Fábio Leandro;Carvalho
+257073;Tiago;B. de Melo Tomás
+257090;Ismaël;Doukouré
+258171;Hannibal;Mejbri
+259170;Rodrigo;Martins Gomes
+259306;Fabian;Rieder
+259714;Merlin;Röhl
+260407;Elye;Wahi
+260523;Paxten;Aaronson
+260876;Maurits;Kjaergaard
+261616;Quentin;Merlin
+262042;Maxime;Estève
+262510;Beñat;Turrientes Imaz
+262745;Neil;El Aynaoui
+264330;Christos;Zafeiris
+264422;Matthis;Abline
+247463;Folarin;Balogun
+234205;Hiroki;Ito
+226754;Ismaël;Bennacer
+228174;Cameron;Carter-Vickers
+235661;Doğucan;Haspolat
+236830;Zaydou;Youssouf
+237034;Juan Camilo;Hernández Suárez
+239810;Nicolas;Raskin
+234569;Florentino;Morris Luís
+238756;Jørgen Strand;Larsen
+240734;Matt;ORiley
+240913;Caoimhin;Kelleher
+241187;Lutsharel;Geertruida
+241707;Pape;Gueye
+242434;Curtis;Jones
+243057;Neco;Williams
+243657;James;Garner
+243702;Djed;Spence
+244973;Marcel;Ruiz
+245037;Eric;García Martret
+245152;Santiago;Giménez
+246565;Bafodé;Diakité
+246871;Enzo;Barrenechea
+248484;Nathan;Collins
+248793;Mats;Wieffer
+251377;Rodrigo;Zalazar
+251421;Brennan;Johnson
+251479;Maxim;De Cuyper
+252064;Ladislav;Krejčí
+254566;Patrick;Wimmer
+255223;Amine;Adli
+255854;Jon;Pacheco Dozagarat
+256612;F. Evanilson;de Lima Barbosa
+257191;Anton;Stach
+257278;Arthur;Theate
+257784;Erik;Lira
+257876;Nicolas;Seiwald
+258444;Evann;Guessand
+258908;Jan Paul;van Hecke
+258911;Toluwalase;Arokodare
+263617;Beñat;Prados Díaz
+263781;Vanderson;de Oliveira Campos
+263880;Julen;Agirrezabala
+266097;Geny;Cipriano Catamo
+269626;Đorđe;Petrović
+270571;Gabriel Davi;Gomes Sara
+73562;Bento Matheus;Krepski
+228383;Kamil;Grabara
+235633;Yehvann;Diouf
+238186;Marcin;Bułka
+239892;Yunus;Akgün
+240225;Matvey;Safonov
+241508;Mikkel;Damsgaard
+241509;Mauro Jaqueson;J. Ferreira Santos
+241811;Sergio;Gómez Martín
+241854;Perr;Schuurs
+242238;Oumar;Solet
+242444;João;Félix Sequeira
+242816;Ricard;Puig Martí
+243627;Yacine;Adli
+243780;Kang In;Lee
+243923;Logan;Costa
+247679;Victor;Boniface
+250955;Josip;Stanišić
+251804;Sergiño;Dest
+252802;Wilfried;Singo
+252929;Borja;Sainz Eguskiza
+253072;Darwin;Núñez
+254548;Melvin;Bard
+254551;Georges;Mikautadze
+255566;Samuel;Almeida Costa
+256325;Josip;Šutalo
+257980;Dan;Ndoye
+258466;Leo;Román Riquelme
+258885;Luiz Lúcio;Reis Júnior
+261264;David;Affengruber
+262402;Sergi;Cardona Bermúdez
+262880;Raphael;Onyedika
+262881;Richard;Ríos
+263205;Barış Alper;Yılmaz
+264697;Mohamed;Amoura
+266160;Mika;Mármol Medina
+266797;Gastón;Álvarez
+266872;Federico;Gatti
+268804;Mario;Gila Fuentes
+269493;Alexsandro;de Souza Ribeiro
+271400;Igor Guilherme;Barbosa da Paixão
+273463;João Victor;Gomes da Silva
+274536;Moïse;Bombito
+277537;Bernardo;de Souza
+206585;Kepa;Arrizabalaga
+207421;Leandro;Trossard
+210697;Christian;Nørgaard
+220901;David;Raya Martin
+225193;Mikel;Merino Zazón
+227813;Oleksandr;Zinchenko
+230666;Gabriel;Fernando de Jesus
+231936;Benjamin;White
+232580;Gabriel;dos S. Magalhães
+234378;Declan;Rice
+235794;Eberechi;Eze
+241651;Viktor;Gyökeres
+243715;William;Saliba
+248148;Martín;Zubimendi Ibáñez
+251805;Jurriën;Timber
+254796;Noni;Madueke
+256958;Fábio Daniel;Ferreira Vieira
+257711;Riccardo;Calafiori
+264846;Cristhian;Mosquera Ibargüen
+265693;Jakub;Kiwior
+222665;Martin;Ødegaard
+231448;Reiss;Nelson
+235790;Kai;Havertz
+246669;Bukayo;Saka
+248732;Karl;Hein
+251566;Gabriel Teodoro;Martinelli Silva
+225793;Ben;Godfrey
+251470;Charles;De Ketelaere
+255611;Daniel;Maldini
+257785;Marco;Brescianini
+262113;Nicola;Zalewski
+266304;Giorgio;Cittadini
+271577;Ibrahim;Sulemana
+277839;Nikola;Krstović
+194894;Francesco;Rossi
+207993;Sead;Kolašinac
+208165;Berat;Djimsiti
+208461;Marten;de Roon
+216065;Marco;Sportiello
+216150;Davide;Zappacosta
+223273;Mario;Pašalić
+226710;Gianluca;Scamacca
+239368;Mitchel;Bakker
+246875;Odilon;Kossounou
+247229;Raoul;Bellanova
+253002;Giacomo;Raspadori
+255529;El Bilal;Touré
+256035;Kamaldeen;Sulemana
+256115;Lazar;Samardžić
+260697;Isak;Hien
+266866;Éderson José;dos Santos
+271399;Andrea;Oliveri
+279529;Leonardo;Mendicino
+193747;Jorge;Resurrección
+213565;Thomas;Lemar
+230899;Ademola;Lookman
+233486;Robin;Le Normand
+240690;Nico;Gonzalez
+245371;Thiago;Almada
+246191;Julián;Alvarez
+253396;Giuliano;Simeone
+257279;Alejandro;Baena Rodríguez
+194765;Antoine;Griezmann
+200389;Jan;Oblak
+214979;Juan;Musso
+216460;José María;Giménez
+216549;Alexander;Sørloth
+220440;Clément;Lenglet
+226161;Marcos;Llorente Moreno
+233084;Nahuel;Molina
+247103;Dávid;Hancko
+251136;Horațiu;Moldovan
+256058;Pablo;Pérez Rico
+259516;João Lucas;de Souza Cardoso
+266039;Marc;Pubill Pagès
+272449;Pablo;Barrios Rivas
+192448;Marc-André;ter Stegen
+231677;Marcus;Rashford
+233419;Raphael;Dias Belloli
+241461;Ferran;Torres García
+241486;Jules;Koundé
+244260;Daniel;Olmo Carvajal
+246139;Ignacio;Peña Sotorres
+251854;Pedro;González López
+259532;Joan;García Pons
+277179;Fermín;López Marín
+277643;Lamine Yamal;Nasraoui Ebana
+186153;Wojciech;Szczęsny
+188545;Robert;Lewandowski
+210514;João Pedro;Cavaco Cancelo
+213661;Andreas;Christensen
+228702;Frenkie;de Jong
+253004;Anssumane;Fati
+253163;Ronald;Araujo
+263578;Alejandro;Balde Martínez
+265600;Roony;Bardghji
+225375;Konrad;Laimer
+229391;João Maria;Palhinha Gonçalves
+167495;Manuel;Neuer
+186569;Sven;Ulreich
+202126;Harry;Kane
+206113;Serge;Gnabry
+209658;Leon;Goretzka
+209889;Raphaël;Guerreiro
+212622;Joshua;Kimmich
+213331;Jonathan;Tah
+223885;Alexander;Nübel
+229558;Dayot;Upamecano
+234396;Alphonso;Davies
+237086;Min Jae;Kim
+241084;Luis;Díaz
+247827;Michael;Olise
+248266;Sacha;Boey
+256790;Jamal;Musiala
+263765;Tom;Bischof
+266236;Arijon;Ibrahimović
+277823;Daniel;Peretz
+222104;Tosin;Adarabioyo
+228789;Robert;Lynch Sánchez
+229942;Axel;Disasi
+239231;Marc;Cucurella Saseta
+242578;Benoît;Badiashile
+247090;Enzo;Fernández
+256079;Moisés;Caicedo
+257534;Cole;Palmer
+259031;Liam;Delap
+259197;Nicolas;Jackson
+259307;Malo;Gusto
+260942;David Datro;Fofana
+230918;Trevoh;Chalobah
+238074;Reece;James
+238616;Pedro;Lomba Neto
+248158;Gabriel;Slonina
+248695;Wesley;Fofana
+261530;Dário;Cassia Luís Essugo
+262859;Levi;Colwill
+263620;Romeo;Lavia
+266032;Jamie;Gittens
+266605;Caleb;Wiley
+215441;Serhou;Guirassy
+229891;Julian;Ryerson
+247819;Nico;Schlotterbeck
+204923;Marcel;Sabitzer
+208333;Emre;Can
+210772;Patrick;Drewes
+212190;Niklas;Süle
+212194;Julian;Brandt
+224196;Ramy;Bensebaini
+229476;Waldemar;Anton
+235073;Gregor;Kobel
+235407;Salih;Özcan
+241050;Alexander;Meyer
+246863;Felix;Nmecha
+248478;Diant;Ramaj
+251852;Karim;Adeyemi
+254117;Maximilian;Beier
+259075;Yan;Bueno Couto
+259356;Carney;Chukwuemeka
+270964;Jobe;Bellingham
+177683;Yann;Sommer
+184392;Matteo;Darmian
+192883;Henrikh;Mkhitaryan
+210406;Piotr;Zieliński
+219715;Raffaele;Di Gennaro
+226268;Federico;Dimarco
+228093;Marcus;Thuram
+233096;Denzel;Dumfries
+239807;Davide;Frattesi
+243311;Josep;Martínez Riera
+258648;Carlos Augusto;Zopolato Neves
+264699;Kristjan;Asllani
+268534;Andy;Diouf
+268558;Tomás;Palacios
+198176;Stefan;de Vrij
+199845;Francesco;Acerbi
+208128;Hakan;Çalhanoğlu
+224232;Nicolò;Barella
+229237;Manuel;Akanji
+231478;Lautaro;Martínez
+237383;Alessandro;Bastoni
+241736;Yann Aurel;Bisseck
+247888;Sebastiano;Esposito
+211320;Daniele;Rugani
+222077;Manuel;Locatelli
+224422;Jérémie;Boga
+231512;Lloyd;Kelly
+236499;Douglas Luiz;Soares de Paulo
+239580;Gleison Bremer;Silva Nascimento
+246656;Emil;Holm
+257290;João Mário;Neto Lopes
+268802;Fabio;Miretti
+189342;Carlo;Pinsoglio
+198009;Mattia;Perin
+205175;Arkadiusz;Milik
+208574;Filip;Kostić
+235840;Michele;Di Gregorio
+238744;Weston;McKennie
+239763;Edon;Zhegrova
+240679;Teun;Koopmeiners
+241496;Timothy;Weah
+243580;Loïs;Openda
+243630;Jonathan;David
+246430;Dušan;Vlahović
+247246;Khéphren;Thuram
+251870;Juan David;Cabal
+255654;Pierre;Kalulu
+258966;Andrea;Cambiaso
+276804;Mattia;Compagnon
+223550;Jonas;Omlin
+236786;Martin;Terrier
+256197;Piero;Hincapié
+268622;Jeanuël;Belocian
+270033;Tim;Oermann
+204092;Janis;Blaswich
+208618;Lucas;Vázquez Iglesias
+210035;Alejandro;Grimaldo García
+210324;Jonas;Hofmann
+210366;Niklas;Lomb
+211738;Mark;Flekken
+212242;Robert;Andrich
+228813;Aleix;García Serrano
+231521;Exequiel;Palacios
+234236;Patrik;Schick
+237328;Nathan;Tella
+247263;Edmond;Tapsoba
+255106;Loïc;Badé
+256853;Malik;Tillman
+261360;Noah;Mbamba
+272781;Eliesse;Ben Seghir
+275028;Arthur Augusto;de Matos Soares
+212831;Alisson;Ramses Becker
+257289;Hugo;Ekitiké
+203376;Virgil;van Dijk
+209331;Mohamed;Salah
+216267;Andrew;Robertson
+222514;Freddie;Woodman
+225100;Joe;Gomez
+232487;Wataru;Endo
+233731;Alexander;Isak
+235805;Federico;Chiesa
+236772;Dominik;Szoboszlai
+237678;Ibrahima;Konaté
+239837;Alexis;Mac Allister
+242516;Cody;Gakpo
+246104;Ryan;Gravenberch
+246174;Harvey;Elliott
+247601;Rhys;Williams
+253149;Jeremie;Frimpong
+253428;Vítězslav;Jaroš
+256630;Florian;Wirtz
+260908;Milos;Kerkez
+262621;Giorgi;Mamardashvili
+278104;Isaac;Mabaya
+205988;Luke;Shaw
+233064;Mason;Mount
+240243;Matheus Santos;Carneiro da Cunha
+277432;Patrick;Dorgu
+163264;Tom;Heaton
+200145;Carlos Henrique;Venancio Casimiro
+203263;Harry;Maguire
+212198;Bruno Miguel;Borges Fernandes
+226753;André;Onana
+233049;Jadon;Sancho
+234574;José Diogo;Dalot Teixeira
+235243;Matthijs;de Ligt
+236401;Noussair;Mazraoui
+238041;Tyrell;Malacia
+239301;Lisandro;Martínez
+243014;Bryan;Mbeumo
+243647;Altay;Bayındır
+250961;Joshua;Zirkzee
+253306;Manuel;Ugarte
+260592;Benjamin;Šeško
+269136;Kobbie;Mainoo
+224081;Kalvin;Phillips
+241159;Marc;Guéhi
+251570;Rayan;Cherki
+253052;Issa;Kaboré
+203574;John;Stones
+204246;Marcus;Bettinelli
+206517;Jack;Grealish
+207410;Mateo;Kovačić
+208920;Nathan;Aké
+218667;Bernardo Mota;Carvalho e Silva
+230621;Gianluigi;Donnarumma
+231866;Rodrigo;Hernández Cascante
+237692;Phil;Foden
+239085;Erling;Haaland
+239818;Rúben Santos;Gato Alves Dias
+240638;Tijjani;Reijnders
+241236;Antoine;Semenyo
+242641;Rayan;Aït-Nouri
+246420;Jérémy;Doku
+251517;Joško;Gvardiol
+253124;Matheus;Luiz Nunes
+255069;Nicolás;González Iglesias
+256675;Omar;Marmoush
+263063;James;Trafford
+270409;Sávio;Moreira de Oliveira
+210008;Adrien;Rabiot
+215698;Mike;Maignan
+240277;Matteo;Gabbia
+253473;Samuele;Ricci
+254840;Strahinja;Pavlović
+257353;Warren;Bondo
+177003;Luka;Modrić
+201153;Álvaro Borja;Morata Martín
+205431;Niclas;Füllkrug
+205812;Pietro;Terracciano
+213666;Ruben;Loftus-Cheek
+227796;Christian;Pulisic
+232411;Christopher;Nkunku
+232756;Fikayo;Tomori
+237942;Pervis;Estupiñán
+241721;Rafael;da Conceição Leão
+245630;Youssouf;Fofana
+253177;Yunus;Musah
+256899;Lorenzo;Colombo
+257186;Ardon;Jashari
+271579;Filippo;Terracciano
+278928;Alejandro;Jiménez Sánchez
+200752;Juan Guilherme;Nunes Jesus
+202884;Leonardo;Spinazzola
+246457;Cyril;Ngonge
+192505;Romelu;Lukaku
+192985;Kevin;De Bruyne
+216409;Matteo;Politano
+216435;Stanislav;Lobotka
+216816;Giovanni;Simeone
+217870;Giovanni;Di Lorenzo
+220532;Nikita;Contini
+224836;Vanja;Milinković-Savić
+225116;Alex;Meret
+227236;André-Franck;Zambo Anguissa
+236632;David;Neres Campos
+237238;Scott;McTominay
+237669;Alessio;Zerbin
+240716;Mathías;Olivera
+241390;Eljif;Elmas
+243241;Alessandro;Buongiorno
+244263;Amir;Rrahmani
+244472;Jens-Lys;Cajuste
+245741;Jesper;Lindstrøm
+245992;Billy;Gilmour
+261865;Miguel;Gutiérrez Ortega
+262394;Sam;Beukema
+268511;Walid;Cheddira
+268656;Alessandro;Zanoli
+268683;Michael;Folorunsho
+207650;Emil;Krafth
+223334;Joelinton;Apolinário de Lira
+233934;Aaron;Ramsdale
+241096;Sandro;Tonali
+247851;Bruno;Guimarães Moura
+163600;John;Ruddy
+186345;Kieran;Trippier
+198032;Dan;Burn
+198039;Mark;Gillespie
+203841;Nick;Pope
+206085;Jacob;Murphy
+210047;Fabian;Schär
+211990;Odysseas;Vlachodimos
+218659;Matt;Targett
+234742;Harvey;Barnes
+234824;Yoane;Wissa
+237329;Joe;Willock
+242964;Anthony;Gordon
+246923;Jacob;Ramsey
+251809;Sven;Botman
+262118;Tino;Livramento
+240702;Roman;Yaremchuk
+208364;Clinton Mukoni;Mata Pedro Lourenço
+210372;Rachid;Ghezzal
+211256;Nicolás;Tagliafico
+219683;Corentin;Tolisso
+220093;Hans;Hateboer
+225263;Duje;Ćaleta-Car
+225782;Ainsley;Maitland-Niles
+225859;Moussa;Niakhaté
+233267;Matt;Turner
+234078;Orel;Mangala
+234371;Rémy;Descamps
+246947;Paul;Akouokou
+247050;Pavel;Šulc
+256970;Adam;Karabec
+262102;Ruben;Kluivert
+263139;Dominik;Greif
+263815;Abner Vinícius;da Silva Santos
+264325;Martín;Satriano
+201455;Geoffrey;Kondogbia
+211784;Neal;Maupay
+215316;Gerónimo;Rulli
+223143;Ulisses;Garcia
+240507;Angel;Gomes
+240753;Amine;Gouiri
+240787;Hamed Junior;Traoré
+242835;Leonardo;Balerdi
+246297;Himad;Abdelli
+188567;Pierre-Emerick;Aubameyang
+210736;Emerson;Palmieri dos Santos
+213648;Pierre-Emile;Højbjerg
+226851;Benjamin;Pavard
+232097;Amine;Harit
+236804;Facundo;Medina
+237841;Amir;Murillo
+239559;Jeffrey;de Lange
+243009;Derek;Cornelius
+244749;Nayef;Aguerd
+246147;Mason;Greenwood
+251806;Quinten;Timber
+256669;Faris Pemi;Moumbagna
+264401;Bamo;Meïté
+278095;Jelle;Van Neck
+237679;Randal;Kolo Muani
+251752;Lucas;Chevalier
+252145;Nuno Alexandre;Tavares Mendes
+207865;Marcos;Aoás Corrêa
+220814;Lucas;Hernández
+226271;Fabián;Ruiz Peña
+231443;Ousmane;Dembélé
+235212;Achraf;Hakimi
+247635;Khvicha;Kvaratskhelia
+255253;Vítor;Machado Ferreira
+256196;Willian;Pacho
+256903;Gonçalo Matias;Ramos
+258781;Illia;Zabarnyi
+264652;Bradley;Barcola
+270673;Warren;Zaïre-Emery
+271421;Désiré;Doué
+279709;Lucas;Lopes Beraldo
+197445;David;Alaba
+228618;Ferland;Mendy
+231281;Trent;Alexander-Arnold
+231410;Brahim;Díaz
+243812;Rodrygo;Silva de Goes
+243952;Andriy;Lunin
+246606;Francisco José;García Torres
+252371;Jude;Bellingham
+278349;Dean;Huijsen
+192119;Thibaut;Courtois
+204963;Daniel;Carvajal Ramos
+205452;Antonio;Rüdiger
+222509;Daniel;Ceballos Fernández
+231747;Kylian;Mbappé
+238794;Vinícius José;de Oliveira Júnior
+239053;Federico;Valverde
+240130;Éder;Gabriel Militão
+241637;Aurélien;Tchouaméni
+190813;Stephan;El Shaarawy
+208268;Bryan;Cristante
+211110;Paulo;Dybala
+224490;Zeki;Çelik
+228251;Lorenzo;Pellegrini
+229582;Gianluca;Mancini
+229668;Mario;Hermoso Canseco
+231447;Donyell;Malen
+232223;Kostas;Tsimikas
+236403;Evan;Ndicka
+242458;Artem;Dovbyk
+245426;Marash;Kumbulla
+250723;Kouadio Manu;Koné
+258826;Devyne;Rensch
+268728;Anass;Salah-Eddine
+211515;Pierluigi;Gollini
+220651;José Ángel;Esmoris Tasende
+230872;Mile;Svilar
+233189;Devis;Vásquez
+239964;Eldor;Shomurodov
+246688;Saud;Abdulhamid
+269312;Tommaso;Baldanzi
+232488;Cristian;Romero
+236480;Yves;Bissouma
+237985;Kevin;Danso
+240091;Guglielmo;Vicario
+261025;Dane;Scarlett
+268421;Mathys;Tel
+270208;Archie;Gray
+270579;Wilson;Odobert
+205923;Ben;Davies
+220697;James;Maddison
+225539;Dominic;Solanke
+227535;Rodrigo;Bentancur
+231943;Richarlison;de Andrade
+236568;Brandon;Austin
+238216;Conor;Gallagher
+245155;Mohammed;Kudus
+245367;Xavi;Simons
+246791;Manor;Solomon
+247394;Dejan;Kulusevski
+259583;Destiny;Udogie
+260105;Radu;Drăgușin
+264180;Alfie;Devine
+264453;Micky;van de Ven
+264731;Ashley;Phillips
+269176;Alejo;Veliz
+272926;Lucas;Bergvall

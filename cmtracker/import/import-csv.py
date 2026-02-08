@@ -17,12 +17,12 @@ import os
 from datetime import datetime
 
 # --- Configuration ---
-CM_CSV = "nouveaux_joueurs.csv"
-#CM_CSV = "joueurs_existants.csv"                  # pour mettre a jour
-OUTPUT_PLAYERS = "players.csv"
-OUTPUT_PLAYERNAMES = "playernames.csv"
-OUTPUT_PLAYERLOANS = "playerloans.csv"
-OUTPUT_TEAMPLAYERLINKS = "teamplayerlinks.csv"
+#CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/new_player.csv"
+CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/exist_player.csv"                  # pour mettre a jour
+OUTPUT_PLAYERS = "/mnt/c/github/fifa/cmtracker/import/csv/players.csv"
+OUTPUT_PLAYERNAMES = "/mnt/c/github/fifa/cmtracker/import/csv/playernames.csv"
+OUTPUT_PLAYERLOANS = "/mnt/c/github/fifa/cmtracker/import/csv/playerloans.csv"
+OUTPUT_TEAMPLAYERLINKS = "/mnt/c/github/fifa/cmtracker/import/csv/teamplayerlinks.csv"
 
 DATE_SCRIPT = "/mnt/c/github/fifa/dateloan.sh"  # chemin vers dateloan.sh (modifie si besoin)
 

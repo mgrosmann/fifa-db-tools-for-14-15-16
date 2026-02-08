@@ -2,7 +2,7 @@
 # ltl16_mysql.sh
 # Export TXT réorganisé selon l'ordre FIFA 16 depuis MySQL avec colonnes protégées par backticks
 
-DB="FIFA14"
+DB="$1"
 cmd="mysql -uroot -proot -P 5000 -h127.0.0.1 -D $DB"
 TABLE="leagueteamlinks"
 OUTFILE="leagueteamlinks_fifa16_format.txt"

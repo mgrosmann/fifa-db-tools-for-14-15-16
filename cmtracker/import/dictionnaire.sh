@@ -1,10 +1,8 @@
 #!/bin/bash
-
+start_time=$(date +%s)
 MYSQL_CMD="mysql -uroot -proot -h127.0.0.1 -P5000 -DFIFA15 -N -s"
-CSV_NAMES="/mnt/c/github/fifa/cmtracker/import/playernames.csv"
-sed -i "s/'//g" playernames.csv
-sed -i "s/'//g" players.csv
-sed -i "s/'//g" teamplayerlinks.csv
+CSV_NAMES="/mnt/c/github/fifa/cmtracker/import/csv/playernames.csv"
+sed -i "s/'//g" $CSV_NAMES
 # ---------------------------------------------------------
 # 1) INSERT DES NOMS DANS playernames SI ABSENTS
 # ---------------------------------------------------------
@@ -41,5 +39,9 @@ VALUES ($newid, '$NAME', 900000);
         fi
     done
 done < <(tail -n +2 "$CSV_NAMES")  # ignorer l'en-tête CSV
+end_time=$(date +%s)
+elapsed=$((end_time - start_time))
+
+echo "Temps d'exécution : ${elapsed}s"
 
 
