@@ -2,14 +2,10 @@
 # 🔐 Mot de passe MySQL
 DB="FIFA15"
 cmd="mysql --local-infile=1 -uroot -proot -h127.0.0.1 -D $DB -P5000 -A"
-TABLE1="players"
-TABLE2="teamplayerlinks"
-OUTFILE1="players.txt"
-OUTFILE2="teamplayerlinks.txt"
-TABLE3="leagueteamlinks"
-OUTFILE3="leagueteamlinks.txt"
-OUTFILE4="1playernames.txt"
+TABLE3="playerloans"
+OUTFILE3="pl.txt"
 TABLE4="playernames"
+OUTFILE4="pn.txt"
 
 add_column_if_missing() {
     local db="$1"
@@ -37,14 +33,12 @@ add_column_if_missing $DB teamplayerlinks leaguegoalsprevmatch "INT DEFAULT 0"
 add_column_if_missing $DB teamplayerlinks leaguegoalsprevthreematches "INT DEFAULT 0"
 
 # ✅ Export des deux tables fixes
-$cmd --batch --column-names -e "SELECT * FROM \`$TABLE1\`;" > "$OUTFILE1"
-$cmd --batch --column-names -e "SELECT * FROM \`$TABLE2\`;" > "$OUTFILE2"
 $cmd --batch --column-names -e "SELECT * FROM \`$TABLE3\`;" > "$OUTFILE3"
 $cmd --batch --column-names -e "SELECT * FROM \`$TABLE4\`;" > "$OUTFILE4"
 
 
 if [ $? -eq 0 ]; then
-    echo "✅ Export terminé : $OUTFILE1,$OUTFILE2 et $OUTFILE3 ainsi que $OUTFILE4"
+    echo "✅ Export terminé : $OUTFILE3 ainsi que $OUTFILE4"
 else
     echo "❌ Erreur lors de l'export"
     exit 1
@@ -57,11 +51,13 @@ bash /mnt/c/github/fifa/16/ltl16.sh $DB
 iconv -f UTF-8 -t UTF-16LE leagueteamlinks_fifa16_format.txt > leagueteamlinks.txt
 bash /mnt/c/github/fifa/16/player16.sh $DB
 iconv -f UTF-8 -t UTF-16LE players_fifa16_format.txt > players.txt
+iconv -f UTF-8 -t UTF-16LE $OUTFILE3 > playerloans.txt
 iconv -f UTF-8 -t UTF-16LE $OUTFILE4 > playernames.txt
 mkdir -p /mnt/c/github/fifa/16/imported_files_15/
 cp /mnt/c/github/txt/FIFA15/leagues.txt /mnt/c/github/fifa/16/imported_files_15/
 cp /mnt/c/github/txt/FIFA15/teams.txt /mnt/c/github/fifa/16/imported_files_15/
-mv playernames.txt /mnt/c/github/fifa/16/imported_files_15/playernames.txt
-mv players.txt /mnt/c/github/fifa/16/imported_files_15/players.txt
-mv teamplayerlinks.txt /mnt/c/github/fifa/16/imported_files_15/teamplayerlinks.txt
-mv leagueteamlinks.txt /mnt/c/github/fifa/16/imported_files_15/leagueteamlinks.txt
+mv playerloans.txt /mnt/c/github/fifa/16/imported_files_15/
+mv playernames.txt /mnt/c/github/fifa/16/imported_files_15/
+mv players.txt /mnt/c/github/fifa/16/imported_files_15/
+mv teamplayerlinks.txt /mnt/c/github/fifa/16/imported_files_15/
+mv leagueteamlinks.txt /mnt/c/github/fifa/16/imported_files_15/
