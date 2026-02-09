@@ -5,7 +5,6 @@ MYSQL_CMD="mysql -uroot -proot -h127.0.0.1 -P5000 -DFIFA15 -N -s"
 CSV_CMTRACKER="/mnt/c/github/fifa/cmtracker//import/csv/players.csv"
 CSV_DEFAULT="/mnt/c/github/fifa/cmtracker/import/csv/test.csv"
 CSV_TPL="/mnt/c/github/fifa/cmtracker/import/csv/teamplayerlinks.csv"
-CSV_NAMES="/mnt/c/github/fifa/cmtracker/import/csv/playernames.csv"
 
 # ---------------------------------------------------------
 # 1) RÉINITIALISATION DU JOUEUR PAR DÉFAUT (999)
