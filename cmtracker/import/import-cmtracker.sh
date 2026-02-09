@@ -190,6 +190,20 @@ do
 
     [[ "$exists_tpl" == "1" ]] && continue
 
+is_transfer=$($MYSQL_CMD --skip-column-names \
+    -e "SELECT tpl.teamid
+        FROM teamplayerlinks tpl
+        JOIN leagueteamlinks ltl ON tpl.teamid = ltl.teamid
+        WHERE tpl.playerid = $tpl_playerid
+          AND ltl.leagueid NOT IN (78)
+          AND tpl.teamid NOT IN ($tpl_teamid);")
+
+if [[ -n "$is_transfer" ]]; then
+    $MYSQL_CMD -e "DELETE FROM teamplayerlinks
+                   WHERE playerid = $tpl_playerid
+                     AND teamid = $is_transfer;"
+fi
+
     KEY=$($MYSQL_CMD --skip-column-names -e \
         "SELECT IFNULL(MAX(artificialkey)+1,1) FROM teamplayerlinks WHERE teamid=$tpl_teamid;")
 $MYSQL_CMD -e "UPDATE teamplayerlinks
