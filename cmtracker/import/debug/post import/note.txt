@@ -128,8 +128,8 @@ ALTER TABLE playernames MODIFY COLUMN commentaryid INT UNSIGNED;
 
 
 CREATE TABLE tmp_player AS SELECT p.playerid, pn_first.name  AS firstname, pn_last.name   AS lastname,
-pn_common.name AS commonname, p.overallrating, p.potential,tpl.teamid,
-t.teamname, n.nationname AS pays,ltl.leagueid, l.leaguename FROM players p
+pn_common.name AS commonname, p.overallrating, p.potential, DATE_FORMAT(     DATE_ADD('1582-10-14', INTERVAL birthdate DAY),     '%d/%m/%Y' ) AS birthday,
+tpl.teamid, t.teamname, n.nationname AS pays,ltl.leagueid, l.leaguename FROM players p
 LEFT JOIN playernames pn_first  ON p.firstnameid  = pn_first.nameid
 LEFT JOIN playernames pn_last   ON p.lastnameid   = pn_last.nameid
 LEFT JOIN playernames pn_common ON p.commonnameid = pn_common.nameid
@@ -138,3 +138,4 @@ LEFT JOIN teams t  ON tpl.teamid  = t.teamid
 LEFT JOIN leagueteamlinks ltl on tpl.teamid = ltl.teamid
 LEFT JOIN leagues l on ltl.leagueid = l.leagueid
 LEFT JOIN nations n on p.nationality = n.nationid;
+
