@@ -127,6 +127,16 @@ UPDATE playernames SET name = 'staro',  commentaryid = '9000000', nameid = 21224
 ALTER TABLE playernames MODIFY COLUMN commentaryid INT UNSIGNED;
 
 
+
+
+
+
+
+
+
+
+
+DROP TABLE tmp_player;
 CREATE TABLE tmp_player AS SELECT p.playerid, pn_first.name  AS firstname, pn_last.name   AS lastname,
 pn_common.name AS commonname, p.overallrating, p.potential, DATE_FORMAT(     DATE_ADD('1582-10-14', INTERVAL birthdate DAY),     '%d/%m/%Y' ) AS birthday,
 tpl.teamid, t.teamname, n.nationname AS pays,ltl.leagueid, l.leaguename FROM players p
@@ -139,3 +149,6 @@ LEFT JOIN leagueteamlinks ltl on tpl.teamid = ltl.teamid
 LEFT JOIN leagues l on ltl.leagueid = l.leagueid
 LEFT JOIN nations n on p.nationality = n.nationid;
 
+
+
+UPDATE playernames set name = trim(name);
