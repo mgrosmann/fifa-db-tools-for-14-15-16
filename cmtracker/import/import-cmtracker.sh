@@ -213,6 +213,7 @@ INSERT INTO teamplayerlinks
  istopscorer, reds, position, jerseynumber)
 VALUES ($tpl_teamid, $tpl_playerid, $KEY,0,0,0,0,0,0,0,3,0,0,29,$number);
 "
+echo "Lié le joueur '$tpl_playerid' à l'équipe '$tpl_teamid' avec le numéro '$number'"
 done
 
 echo "--- FIN TEAMPLAYERLINKS ---"

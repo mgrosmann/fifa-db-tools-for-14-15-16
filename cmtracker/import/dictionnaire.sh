@@ -2,7 +2,9 @@
 start_time=$(date +%s)
 MYSQL_CMD="mysql -uroot -proot -h127.0.0.1 -P5000 -DFIFA15 -N -s"
 CSV_NAMES="/mnt/c/github/fifa/cmtracker/import/csv/playernames.csv"
+CSV_P="/mnt/c/github/fifa/cmtracker/import/csv/players.csv"
 sed -i "s/'//g" $CSV_NAMES
+sed -i "s/'//g" $CSV_P
 # ---------------------------------------------------------
 # 1) INSERT DES NOMS DANS playernames SI ABSENTS
 # ---------------------------------------------------------

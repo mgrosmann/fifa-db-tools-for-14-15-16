@@ -1,0 +1,57 @@
+doublon post import:
+Saelemaekers,Chukwueze,Mazzocchi,Lang,Carnesecchi,Camavinga,
+_______________________________________
+joueur doublon:
+
+SELECT CONCAT(fn.name, ' ', ln.name) AS fullname,p.birthdate,p.nationality,GROUP_CONCAT(p.playerid ORDER BY p.playerid) AS ids,COUNT(*) AS count_ids
+FROM players p LEFT JOIN playernames fn ON p.firstnameid = fn.nameid LEFT JOIN playernames ln ON p.lastnameid = ln.nameid WHERE ln.name NOT LIKE '%new player%'
+GROUP BY fn.name, ln.name, p.birthdate, p.nationality HAVING COUNT(*) > 1 ORDER BY fullname;
+
+_______________________________________
+nom non utilisé
+SELECT pn.nameid, pn.name FROM playernames pn LEFT JOIN players p1 ON p1.firstnameid = pn.nameid
+LEFT JOIN players p2 ON p2.lastnameid = pn.nameid LEFT JOIN players p3 ON p3.commonnameid = pn.nameid
+WHERE p1.firstnameid IS NULL   AND p2.lastnameid IS NULL   AND p3.commonnameid IS NULL;
+_____________________________________________
+Joueur dans plusieurs clubs:
+SELECT p.playerid,CONCAT(fn.name, ' ', ln.name) AS fullname, GROUP_CONCAT(DISTINCT t.teamname ORDER BY t.teamname) AS clubs,COUNT(DISTINCT t.teamid) AS club_count
+FROM teamplayerlinks tpl JOIN players p ON tpl.playerid = p.playerid LEFT JOIN playernames fn ON p.firstnameid = fn.nameid 
+LEFT JOIN playernames ln ON p.lastnameid = ln.nameid JOIN teams t ON tpl.teamid = t.teamid JOIN leagueteamlinks ltl ON tpl.teamid = ltl.teamid
+WHERE ltl.leagueid NOT IN (78) AND ( t.teamname NOT LIKE '%adidas%'AND t.teamname NOT LIKE '%world%' AND t.teamname NOT LIKE '%All stars%')
+GROUP BY p.playerid, fullname HAVING COUNT(DISTINCT t.teamid) > 1 ORDER BY fullname;
+
+________________________________________________________________
+exporter joueur dans plusieurs clubs en csv:
+
+SELECT x.playerid,CONCAT(fn.name, ' ', ln.name) AS fullname,t1.teamname AS club1,t2.teamname AS club2,x.teamid1,x.teamid2
+FROM ( SELECT tpl.playerid,MIN(t.teamid) AS teamid1,MAX(t.teamid) AS teamid2 FROM teamplayerlinks tpl
+JOIN teams t ON tpl.teamid = t.teamid JOIN leagueteamlinks ltl ON tpl.teamid = ltl.teamid
+WHERE ltl.leagueid <> 78 AND t.teamname NOT LIKE '%adidas%' AND t.teamname NOT LIKE '%world%' AND t.teamname NOT LIKE '%All stars%'
+GROUP BY tpl.playerid HAVING COUNT(DISTINCT t.teamid) = 2) AS x 
+JOIN players p ON x.playerid = p.playerid LEFT JOIN playernames fn ON p.firstnameid = fn.nameid
+LEFT JOIN playernames ln ON p.lastnameid = ln.nameid JOIN teams t1 ON t1.teamid = x.teamid1 JOIN teams t2 ON t2.teamid = x.teamid2
+ORDER BY fullname INTO OUTFILE '/tmp/export.csv' FIELDS TERMINATED BY ';' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n';
+
+
+copier le csv:
+docker cp fifa:/tmp/export.csv /mnt/c/github/fifa
+
+
+Saelemaekers,Chukwueze,Mazzocchi,Lang,Carnesecchi,Camavinga,
+240598,229698,239680,230883,240996,240336
+DELETE FROM teamplayerlinks
+WHERE playerid IN (240598,229698,239680,230883,240996,240336);
+DELETE FROM players
+WHERE playerid IN (240598,229698,239680,230883,240996,240336);
+
+
+
++-------------------------------+-----------+-------------+---------------+-----------+
+| fullname                      | birthdate | nationality | ids           | count_ids |
++-------------------------------+-----------+-------------+---------------+-----------+
+| Alexis Saelemaekers           | 152197    |           7 | 240598,242664 |         2 |
+| Eduardo Camavinga             | 153429    |          18 | 240336,248243 |         2 |
+| Marco Carnesecchi             | 152567    |          27 | 240996,252154 |         2 |
+| Noa Lang                      | 152187    |          34 | 230883,239380 |         2 |
+| Pasquale Mazzocchi            | 150766    |          27 | 239679,239680 |         2 |
+| Samuel Chukwueze              | 152161    |         133 | 229698,246172 |         2 |
