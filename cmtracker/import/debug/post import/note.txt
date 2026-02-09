@@ -55,3 +55,73 @@ WHERE playerid IN (240598,229698,239680,230883,240996,240336);
 | Noa Lang                      | 152187    |          34 | 230883,239380 |         2 |
 | Pasquale Mazzocchi            | 150766    |          27 | 239679,239680 |         2 |
 | Samuel Chukwueze              | 152161    |         133 | 229698,246172 |         2 |
+
+
+
+Requete utile:
+
+
+--info complet sur un player
+SELECT p.commonnameid, p.playerid, p.overallrating, tpl.teamid, t.teamname, CONCAT(pn_first.name, ' ', pn_last.name) as fullname, pn_first.nameid, pn_last.nameid FROM players p JOIN playernames pn_first ON p.firstnameid = pn_first.nameid JOIN playernames pn_last  ON p.lastnameid  = pn_last.nameid JOIN teamplayerlinks tpl on p.playerid = tpl.playerid JOIN teams t on tpl.teamid = t.teamid WHERE CONCAT(pn_first.name, ' ', pn_last.name) like '%zidane%';
+--info complet sur un playerid
+SELECT p.commonnameid, p.playerid, p.overallrating, tpl.teamid, t.teamname, CONCAT(pn_first.name, ' ', pn_last.name) as fullname, pn_first.nameid, pn_last.nameid FROM players p JOIN playernames pn_first ON p.firstnameid = pn_first.nameid JOIN playernames pn_last  ON p.lastnameid  = pn_last.nameid JOIN teamplayerlinks tpl on p.playerid = tpl.playerid JOIN teams t on tpl.teamid = t.teamid WHERE tpl.playerid = ;
+
+--info juste le nom
+SELECT CONCAT(pn_first.name, ' ', pn_last.name) as fullname FROM players p JOIN playernames pn_first ON p.firstnameid = pn_first.nameid
+JOIN playernames pn_last  ON p.lastnameid  = pn_last.nameid WHERE p.playerid = ;
+--info juste le nom
+SELECT CONCAT(pn_first.name, ' ', pn_last.name) as fullname FROM players p JOIN playernames pn_first ON p.firstnameid = pn_first.nameid
+JOIN playernames pn_last  ON p.lastnameid  = pn_last.nameid WHERE WHERE CONCAT(pn_first.name, ' ', pn_last.name) like '%%';
+
+--lister joueur teams
+SELECT p.playerid, tpl.position, p.overallrating as gen, p.potential as pot, t.teamname, pn_first.name as fn, pn_last.name as ln,
+pn_common.name as cn FROM teamplayerlinks tpl JOIN teams t ON tpl.teamid = t.teamid  join players p on tpl.playerid = p.playerid
+JOIN playernames pn_common on p.commonnameid = pn_common.nameid  JOIN playernames pn_first ON p.firstnameid = pn_first.nameid 
+JOIN playernames pn_last  ON p.lastnameid  = pn_last.nameid WHERE t.teamname LIKE '%real madrid%' order by tpl.position;
+
+
+problème artificialkey
+SET @k := -1;
+
+UPDATE teamplayerlinks t
+JOIN (
+    SELECT playerid, teamid, position,
+           (@k := @k + 1) AS new_key
+    FROM teamplayerlinks
+    ORDER BY teamid, position, playerid
+) x
+ON t.playerid = x.playerid AND t.teamid = x.teamid AND t.position = x.position
+SET t.artificialkey = x.new_key;
+
+
+
+
+________regler problèmes de pret db fifa 16
+CREATE TABLE tmp_loan (
+    teamidloanedfrom  INT,
+    playerid INT ,
+    loandateend INT
+);
+LOAD DATA LOCAL INFILE '/mnt/c/github/txt/FIFA16/csv/playerloans.csv'
+INTO TABLE tmp_loan
+FIELDS TERMINATED BY ';'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+
+DELETE tl
+FROM tmp_loan tl
+LEFT JOIN FC16.players p
+    ON tl.playerid = p.playerid
+WHERE p.playerid IS NULL;
+ 
+reglage probleme playernames
+
+UPDATE playernames SET name = 'Gabriel', commentaryid = '9000000', nameid = 7928 WHERE commentaryid = '� el';
+UPDATE playernames SET name = 'Niraj', commentaryid = '9000000', nameid = 9892 WHERE commentaryid = '� aj';
+UPDATE playernames SET name = 'Kuba',  commentaryid = '9000000', nameid = 14555 WHERE commentaryid = '� ';
+ALTER TABLE playernames MODIFY COLUMN commentaryid INT UNSIGNED;
+
+UPDATE playernames SET name = 'Niraj', commentaryid = '9000000', nameid = 16443 WHERE commentaryid = '� aj';
+UPDATE playernames SET name = 'staro',  commentaryid = '9000000', nameid = 21224 WHERE commentaryid = '� o';
+ALTER TABLE playernames MODIFY COLUMN commentaryid INT UNSIGNED;
