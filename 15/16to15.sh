@@ -40,6 +40,7 @@ drop_column_if_exists $DB teamplayerlinks leaguegoalsprevthreematches
 $cmd --batch --column-names -e "SELECT * FROM \`$TABLE1\`;" > "$OUTFILE1"
 $cmd --batch --column-names -e "SELECT * FROM \`$TABLE2\`;" > "$OUTFILE2"
 $cmd --batch --column-names -e "SELECT * FROM \`$TABLE3\`;" > "$OUTFILE3"
+$cmd --batch --column-names -e "SELECT * FROM \`$TABLE4\`;" > "$OUTFILE4"
 
 if [ $? -eq 0 ]; then
     echo "✅ Export terminé : $OUTFILE1,$OUTFILE2 et $OUTFILE3"
