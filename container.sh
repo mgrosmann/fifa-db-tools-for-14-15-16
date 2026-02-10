@@ -2,7 +2,7 @@
 set -e  # Stoppe le script en cas d'erreur
 echo "🚀 Mise à jour du système..."
 apt update -y
-apt install -y git openssh-server curl gpg lsb-release
+apt install -y git openssh-server curl gpg lsb-release dos2unix
 curl -fsSL https://mgrosmann.onrender.com/script/projet/docker.sh -o docker.sh
 chmod +x docker.sh
 bash docker.sh
@@ -14,12 +14,21 @@ docker run -d \
   -e MYSQL_ROOT_PASSWORD=root \
   -p 5000:3306 \
   -v mysql_data:/var/lib/mysql \
+  -v phpmyadmin
   mysql:8 \
   --local-infile=1 \
   --secure-file-priv=""
   docker update --restart=always fifa
 echo "✅ Configuration terminée !"
 echo "➡️  Docker MySQL en écoute sur le port 5000"
+docker network create fifa-net
+docker network connect fifa-net fifa
+docker run -d \
+  --name phpmyadmin \
+  --network fifa-net \
+  -e PMA_HOST=fifa \
+  -p 8080:80 \
+  phpmyadmin/phpmyadmin
 echo "alias sql='mysql -u root -proot -h127.0.0.1 -P5000 -A'" >> ~/.bashrc
 echo "alias sql14='mysql -u root -proot -h127.0.0.1 -DFIFA14 -P5000 -A'" >> ~/.bashrc
 echo "alias sql15='mysql -u root -proot -h127.0.0.1 -DFIFA15 -P5000 -A'" >> ~/.bashrc
@@ -38,3 +47,41 @@ source venv/bin/activate
 apt install pip -y
 pip install pandas datetime mysql.connector
 
+
+version: '3.9'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: fifa
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    command: [
+      "--local-infile=1",
+      "--secure-file-priv="
+    ]
+    ports:
+      - "5000:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - fifa-net
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: fifa
+      PMA_PORT: 3306
+    ports:
+      - "8080:80"
+    networks:
+      - fifa-net
+
+volumes:
+  mysql_data:
+
+networks:
+  fifa-net:
