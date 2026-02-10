@@ -341,3 +341,5 @@ UPDATE players SET
         ELSE commonnameid
     END;
 
+
+SELECT      p.playerid,     p.firstnameid,     p.lastnameid,     p.commonnameid FROM players p LEFT JOIN playernames fn ON fn.nameid = p.firstnameid LEFT JOIN playernames ln ON ln.nameid = p.lastnameid LEFT JOIN playernames cn ON cn.nameid = p.commonnameid WHERE fn.nameid IS NULL    OR ln.nameid IS NULL    OR cn.nameid IS NULL;
