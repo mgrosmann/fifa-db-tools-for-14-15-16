@@ -12,6 +12,21 @@ nom non utilisé
 SELECT pn.nameid, pn.name FROM playernames pn LEFT JOIN players p1 ON p1.firstnameid = pn.nameid
 LEFT JOIN players p2 ON p2.lastnameid = pn.nameid LEFT JOIN players p3 ON p3.commonnameid = pn.nameid
 WHERE p1.firstnameid IS NULL   AND p2.lastnameid IS NULL   AND p3.commonnameid IS NULL;
+
+DELETE FROM playernames
+WHERE nameid IN (
+    SELECT nameid FROM (
+        SELECT pn.nameid
+        FROM playernames pn
+        LEFT JOIN players p1 ON p1.firstnameid = pn.nameid
+        LEFT JOIN players p2 ON p2.lastnameid = pn.nameid
+        LEFT JOIN players p3 ON p3.commonnameid = pn.nameid
+        WHERE p1.firstnameid IS NULL
+          AND p2.lastnameid IS NULL
+          AND p3.commonnameid IS NULL
+    ) AS x
+);
+
 _____________________________________________
 Joueur dans plusieurs clubs:
 SELECT p.playerid,CONCAT(fn.name, ' ', ln.name) AS fullname, GROUP_CONCAT(DISTINCT t.teamname ORDER BY t.teamname) AS clubs,COUNT(DISTINCT t.teamid) AS club_count
