@@ -7,25 +7,6 @@ SELECT CONCAT(fn.name, ' ', ln.name) AS fullname,p.birthdate,p.nationality,GROUP
 FROM players p LEFT JOIN playernames fn ON p.firstnameid = fn.nameid LEFT JOIN playernames ln ON p.lastnameid = ln.nameid WHERE ln.name NOT LIKE '%new player%'
 GROUP BY fn.name, ln.name, p.birthdate, p.nationality HAVING COUNT(*) > 1 ORDER BY fullname;
 
-_______________________________________
-nom non utilisé
-SELECT pn.nameid, pn.name FROM playernames pn LEFT JOIN players p1 ON p1.firstnameid = pn.nameid
-LEFT JOIN players p2 ON p2.lastnameid = pn.nameid LEFT JOIN players p3 ON p3.commonnameid = pn.nameid
-WHERE p1.firstnameid IS NULL   AND p2.lastnameid IS NULL   AND p3.commonnameid IS NULL;
-
-DELETE FROM playernames
-WHERE nameid IN (
-    SELECT nameid FROM (
-        SELECT pn.nameid
-        FROM playernames pn
-        LEFT JOIN players p1 ON p1.firstnameid = pn.nameid
-        LEFT JOIN players p2 ON p2.lastnameid = pn.nameid
-        LEFT JOIN players p3 ON p3.commonnameid = pn.nameid
-        WHERE p1.firstnameid IS NULL
-          AND p2.lastnameid IS NULL
-          AND p3.commonnameid IS NULL
-    ) AS x
-);
 
 _____________________________________________
 Joueur dans plusieurs clubs:
@@ -157,3 +138,66 @@ CREATE TABLE tmp_player AS SELECT p.playerid,CONCAT(pn_first.name,CASE WHEN pn_c
 
 
 UPDATE playernames set name = trim(name);
+
+
+_______________________________________
+nom non utilisé
+SELECT pn.nameid, pn.name FROM playernames pn LEFT JOIN players p1 ON p1.firstnameid = pn.nameid
+LEFT JOIN players p2 ON p2.lastnameid = pn.nameid LEFT JOIN players p3 ON p3.commonnameid = pn.nameid
+WHERE p1.firstnameid IS NULL   AND p2.lastnameid IS NULL   AND p3.commonnameid IS NULL;
+
+DELETE FROM playernames
+WHERE nameid IN (
+    SELECT nameid FROM (
+        SELECT pn.nameid
+        FROM playernames pn
+        LEFT JOIN players p1 ON p1.firstnameid = pn.nameid
+        LEFT JOIN players p2 ON p2.lastnameid = pn.nameid
+        LEFT JOIN players p3 ON p3.commonnameid = pn.nameid
+        WHERE p1.firstnameid IS NULL
+          AND p2.lastnameid IS NULL
+          AND p3.commonnameid IS NULL
+    ) AS x
+);
+
+UPDATE players p
+JOIN (
+    SELECT 
+        name_bin,
+        MAX(nameid) AS keep_id,
+        GROUP_CONCAT(nameid ORDER BY nameid) AS all_ids
+    FROM (
+        SELECT 
+            name COLLATE utf8mb4_bin AS name_bin,
+            nameid
+        FROM playernames
+    ) AS x
+    GROUP BY name_bin
+    HAVING COUNT(*) > 1
+) d
+ON FIND_IN_SET(p.firstnameid, d.all_ids)
+   OR FIND_IN_SET(p.lastnameid, d.all_ids)
+   OR FIND_IN_SET(p.commonnameid, d.all_ids)
+SET 
+    p.firstnameid  = IF(FIND_IN_SET(p.firstnameid, d.all_ids), d.keep_id, p.firstnameid),
+    p.lastnameid   = IF(FIND_IN_SET(p.lastnameid, d.all_ids), d.keep_id, p.lastnameid),
+    p.commonnameid = IF(FIND_IN_SET(p.commonnameid, d.all_ids), d.keep_id, p.commonnameid);
+DELETE pn
+FROM playernames pn
+JOIN (
+    SELECT 
+        name_bin,
+        MAX(nameid) AS keep_id,
+        GROUP_CONCAT(nameid ORDER BY nameid) AS all_ids
+    FROM (
+        SELECT 
+            name COLLATE utf8mb4_bin AS name_bin,
+            nameid
+        FROM playernames
+    ) AS x
+    GROUP BY name_bin
+    HAVING COUNT(*) > 1
+) d ON FIND_IN_SET(pn.nameid, d.all_ids)
+WHERE pn.nameid <> d.keep_id;
+
+
