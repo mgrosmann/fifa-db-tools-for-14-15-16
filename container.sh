@@ -9,46 +9,7 @@ bash docker.sh
 echo "🧩 Installation de MariaDB client..."
 apt install -y mariadb-client-compat
 echo "🐬 Lancement du conteneur MySQL Docker (port 5000)..."
-docker run -d \
-  --name fifa \
-  -e MYSQL_ROOT_PASSWORD=root \
-  -p 5000:3306 \
-  -v mysql_data:/var/lib/mysql \
-  -v phpmyadmin
-  mysql:8 \
-  --local-infile=1 \
-  --secure-file-priv=""
-  docker update --restart=always fifa
-echo "✅ Configuration terminée !"
-echo "➡️  Docker MySQL en écoute sur le port 5000"
-docker network create fifa-net
-docker network connect fifa-net fifa
-docker run -d \
-  --name phpmyadmin \
-  --network fifa-net \
-  -e PMA_HOST=fifa \
-  -p 8080:80 \
-  phpmyadmin/phpmyadmin
-echo "alias sql='mysql -u root -proot -h127.0.0.1 -P5000 -A'" >> ~/.bashrc
-echo "alias sql14='mysql -u root -proot -h127.0.0.1 -DFIFA14 -P5000 -A'" >> ~/.bashrc
-echo "alias sql15='mysql -u root -proot -h127.0.0.1 -DFIFA15 -P5000 -A'" >> ~/.bashrc
-echo "alias sql16='mysql -u root -proot -h127.0.0.1 -DFIFA16 -P5000 -A'" >> ~/.bashrc
-echo "alias sql18='mysql -u root -proot -h127.0.0.1 -DFIFA1518 -P5000 -A'" >> ~/.bashrc
-echo "alias vide='>'" >> ~/.bashrc
-echo "alias fifa='cd /mnt/c/github/fifa'" >> ~/.bashrc
-echo "alias home='cd /mnt/c/Users/PC'" >> ~/.bashrc
-echo "alias regen='source ~/.bashrc'" >> ~/.bashrc
-echo "alias dump='mysqldump -uroot -proot -h127.0.0.1 -P5000'" >> ~/.bashrc
-echo "penser à faire 'source ~/.bashrc'"
-apt install python3.11-venv -y
-apt install python3-full -y
-python3 -m venv venv
-source venv/bin/activate
-apt install pip -y
-pip install pandas datetime mysql.connector
-
-
-version: '3.9'
+echo 'version: "3.9"
 
 services:
   mysql:
@@ -70,7 +31,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: pma
     restart: always
     environment:
       PMA_HOST: fifa
@@ -85,3 +46,22 @@ volumes:
 
 networks:
   fifa-net:
+' > compose.yaml
+docker compose up -d
+echo "alias sql='mysql -u root -proot -h127.0.0.1 -P5000 -A'" >> ~/.bashrc
+echo "alias sql14='mysql -u root -proot -h127.0.0.1 -DFIFA14 -P5000 -A'" >> ~/.bashrc
+echo "alias sql15='mysql -u root -proot -h127.0.0.1 -DFIFA15 -P5000 -A'" >> ~/.bashrc
+echo "alias sql16='mysql -u root -proot -h127.0.0.1 -DFIFA16 -P5000 -A'" >> ~/.bashrc
+echo "alias sql18='mysql -u root -proot -h127.0.0.1 -DFIFA1518 -P5000 -A'" >> ~/.bashrc
+echo "alias vide='>'" >> ~/.bashrc
+echo "alias fifa='cd /mnt/c/github/fifa'" >> ~/.bashrc
+echo "alias home='cd /mnt/c/Users/PC'" >> ~/.bashrc
+echo "alias regen='source ~/.bashrc'" >> ~/.bashrc
+echo "alias dump='mysqldump -uroot -proot -h127.0.0.1 -P5000'" >> ~/.bashrc
+echo "penser à faire 'source ~/.bashrc'"
+apt install python3.11-venv -y
+apt install python3-full -y
+python3 -m venv venv
+source venv/bin/activate
+apt install pip -y
+pip install pandas datetime mysql.connector
