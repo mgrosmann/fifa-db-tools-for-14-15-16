@@ -62,6 +62,6 @@ echo "penser à faire 'source ~/.bashrc'"
 apt install python3.11-venv -y
 apt install python3-full -y
 python3 -m venv venv
-source venv/bin/activate
 apt install pip -y
 pip install pandas datetime mysql.connector
+echo faire " source venv/bin/activate"
