@@ -32,7 +32,7 @@ OUTPUT_PLAYERNAMES = "/mnt/c/github/fifa/cmtracker/import/csv/playernames.csv"
 OUTPUT_PLAYERLOANS = "/mnt/c/github/fifa/cmtracker/import/csv/playerloans.csv"
 OUTPUT_TEAMPLAYERLINKS = "/mnt/c/github/fifa/cmtracker/import/csv/teamplayerlinks.csv"
 
-DATE_SCRIPT = "/mnt/c/github/fifa/dateloan.sh"  # chemin vers dateloan.sh (modifie si besoin)
+DATE_SCRIPT = "/mnt/c/github/fifa/date/dateloan.sh"  # chemin vers dateloan.sh (modifie si besoin)
 
 # BASE used by dateloan.sh fallback
 BASE_ID = 157499
