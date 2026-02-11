@@ -236,4 +236,3 @@ elapsed=$((end_time - start_time))
 echo "Temps d'exécution : ${elapsed}s"
 
 # ---------------------------------------------------------
-

@@ -1,10 +1,13 @@
 import pandas as pd
+import sys
+if sys.argv[1] =="1":
+    INPUT="/mnt/c/github/fifa/cmtracker/import/csv/joueurs_existants_fixed.csv"
+    OUTPUT = "/mnt/c/github/fifa/cmtracker/import/csv/exist_player.csv"
+elif sys.argv[1] =="2":
+    INPUT="/mnt/c/github/fifa/cmtracker/import/csv/joueurs_nouveaux_fixed.csv"
+    OUTPUT = "/mnt/c/github/fifa/cmtracker/import/csv/new_player.csv"
 
 # --- CONFIG ---
-INPUT="/mnt/c/github/fifa/cmtracker/import/csv/joueurs_existants_fixed.csv"
-#INPUT="/mnt/c/github/fifa/cmtracker/import/csv/joueurs_nouveaux_fixed.csv"
-OUTPUT = "/mnt/c/github/fifa/cmtracker/import/csv/exist_player.csv"
-#OUTPUT = "/mnt/c/github/fifa/cmtracker/import/csv/new_player.csv"
 LOG = "/mnt/c/github/fifa/cmtracker/import/debug/doublons_teamid.log"
 
 # --- Charger CSV ---

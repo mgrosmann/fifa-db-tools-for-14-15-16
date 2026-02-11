@@ -15,10 +15,18 @@ import csv
 import subprocess
 import os
 from datetime import datetime
+import sys
+if sys.argv[1] =="1":
+    CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/exist_player.csv"
+elif sys.argv[1] =="2":
+    CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/new_player.csv"
+else:
+    print("Usage: python convert_cm_to_fifa15.py [1|2]")
+    print("  1: exist_player.csv")
+    print("  2: new_player.csv")
+    sys.exit(1)
 
 # --- Configuration ---
-#CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/new_player.csv"
-CM_CSV = "/mnt/c/github/fifa/cmtracker/import/csv/exist_player.csv"
 OUTPUT_PLAYERS = "/mnt/c/github/fifa/cmtracker/import/csv/players.csv"
 OUTPUT_PLAYERNAMES = "/mnt/c/github/fifa/cmtracker/import/csv/playernames.csv"
 OUTPUT_PLAYERLOANS = "/mnt/c/github/fifa/cmtracker/import/csv/playerloans.csv"

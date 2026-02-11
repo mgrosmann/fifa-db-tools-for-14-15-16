@@ -1,7 +1,7 @@
 #!/bin/bash
 cmd="mysql -uroot -proot -h127.0.0.1 -P5000 -Dtest"
-$cmd -e " drop table tpl;"
-$cmd -e "CREATE TABLE tpl (
+$cmd -e " drop table if exists tpl;"
+$cmd -e "CREATE TABLE if not exists tpl (
     playerid INT NOT NULL,
     teamid INT NOT NULL,
     isloaned TINYINT(1) NOT NULL,

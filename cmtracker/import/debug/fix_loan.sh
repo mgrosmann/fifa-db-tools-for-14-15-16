@@ -13,7 +13,7 @@ $cmd -e "
 
 echo "✔ Correction terminée : les clubs d'origine des joueurs prêtés ont été supprimés de teamplayerlinks."
 
-$cmd -e "UPDATE FIFA15.playerloans
+$cmd -e "UPDATE $DB.playerloans
 SET loandateend = 162062
 WHERE loandateend < 161728;"
 echo "reglage date pret"
@@ -23,3 +23,7 @@ FROM playerloans pl
 JOIN teamplayerlinks tpl ON pl.playerid = tpl.playerid
 WHERE pl.teamidloanedfrom = tpl.teamid;"
 echo "supprimer pret a soi meme"
+
+$cmd -e "UPDATE $DB.players
+SET contractvaliduntil = 2026
+WHERE contractvaliduntil < 2026;"
